@@ -1,0 +1,95 @@
+:root {
+  --main: #222222;
+  --color: #eeeeee
+}
+::selection {
+  background-color: red;
+  color: var(--color);
+  text-shadow: #d90000 2px 2px;
+}
+:focus {
+  transform: scale(1.05);
+}
+
+* {
+  color: var(--color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  background-color: var(--main);
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  gap: 12vw;
+}
+
+main {
+  border: 3px solid red;
+  border-radius: 5px;
+  padding-block: 44px;
+  padding-inline: 128px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  letter-spacing: 8px;
+  font-size: 2rem;
+}
+input {
+  background-color: black;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: all .15s ease-in-out;
+  padding-inline: 6px;
+  padding-block: 2px;
+}
+label {
+  text-align: left;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  font-size: 12px;
+  text-decoration: underline;
+  filter: brightness(.8);
+  cursor: pointer;
+}
+.loginArea {
+  display: flex;
+  flex-direction: column;
+}
+input:focus {
+  outline: none;
+  border: 2px solid rgba(255, 0, 0, 0.4);
+}
+button {
+  border: none;
+  border-radius: 5px;
+  transition: all .15s ease-in-out;
+  padding-inline: 6px;
+  padding-block: 2px;
+  background-color: red;
+  font-size: 1rem;
+  margin-top: 22px;
+  min-width: 100%;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgba(255, 0, 0, 0.75);
+}
+button:focus {
+  background-color: red;
+  outline: none;
+}
