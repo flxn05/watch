@@ -31,7 +31,7 @@ body {
 }
 
 main {
-  border: 3px solid red;
+  border: 4px solid darkred;
   border-radius: 5px;
   padding-block: 44px;
   padding-inline: 128px;
@@ -39,6 +39,8 @@ main {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(6px);
 }
 
 h1 {
@@ -102,5 +104,5 @@ button:focus {
   left: 0;
   object-fit: cover;
   z-index: -1;
-  filter: brightness(.15);
+  filter: brightness(1);
 }
